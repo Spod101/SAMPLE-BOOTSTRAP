@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- logo -->
+    <script src="https://kit.fontawesome.com/22312c5dd2.js" crossorigin="anonymous"></script>
+    <style>
+      /* Nav bar */
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      .d-flex img {
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.34);
+      }
+
+      .nav-link-custom {
+        color: #c57f1e;
+      }
+
+      /* Products */
+      .card-price {
+        font-size: 6rem;
+        margin-bottom: 20%;
+      }
+
+      .card-title {
+        margin-top: 10%;
+        margin-bottom: 20%;
+      }
+
+      .btn {
+        margin-bottom: 10%;
+      }
+
+      /* Features */
+      .feature {
+        background-color: #fff;
+      }
+
+      .feature-box {
+        text-align: center;
+        padding: 5% 7%;
+      }
+
+      .feature-para, .products-para, .card-text, .contact-para {
+        color: #8f8f8f;
+      }
+
+      .feature-box img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 5%;
+      }
+
+      /* Contact */
+      #contact {
+        text-align: center;
+        background-color: #EFEFEF;
+        padding: 3% 20%;
+      }
+
+      .form-content {
+        position: relative;
+        width: 90%;
+        left: 5%;
+      }
+
+      #contact button {
+        margin-top: 5%;
+        border-radius: 20%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
+      }
+
+      /* Footer */
+      .footer {
+        padding-top: 4%;
+      }
+
+      .footer-logo {
+        color: #000000;
+        padding: 2%;
+      }
+
+      .footer-logo:hover {
+        color: #c57f1e;
+      }
+
+      .footer .custom-link {
+        color: #000000;
+      }
+
+      @media (max-width: 1028px) {
+        body {
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 769px) {
+        .text-left {
+          text-align: center;
+        }
+
+        .footer .row {
+          justify-content: center;
+        }
+
+        .footer h4,
+        .footer p {
+          text-align: center;
+        }
+
+        .footer .social-media {
+          text-align: center;
+        }
+
+        .footer .list-unstyled {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="#">
+        <div class="d-flex align-items-center">
+          <img src="./img/logo.png" alt="Logo">
+          <h5 class="nav-link mb-0 ms-2 nav-link-custom">Handful of Euphoria</h5>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="jumbotron text-center" id="about">
+      <h1>Welcome to Handful of Euphoria</h1>
+      <p>Elevating Snack Delicacies to New Heights!</p>
+    </header>
+    <div id="features" class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center bg-warning">
+              <h5 class="card-title">ICE CANDY</h5>
+              <h1 class="card-price">P15</h1>
+              <a class="btn btn-success btn-lg" href="#features">Order Now</a>
+            </div>
+            <div class="card-body bg-warning">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="rounded p-3 bg-warning">
+                      <span class="checkmark">&#10003;</span> Bursting with refreshing flavors
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="rounded p-3 bg-warning">
+                      <span class="checkmark">&#10003;</span> Perfect way to beat the heat
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="rounded p-3 bg-warning">
+                      <span class="checkmark">&#10003;</span> Satisfy your sweet tooth
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center bg-light">
+              <h5 class="card-title">NACHOS</h5>
+              <h1 class="card-price">P100</h1>
+              <a class="btn btn-success btn-lg" href="#features">Order Now</a>
+            </div>
+            <div class="card-body bg-light">
+              <div class="container rounded-circle">
+                <div class="row">
+                  <div class="col">
+                    <div class="rounded p-3 bg-light">
+                      <span class="checkmark">&#10003;</span> Deliciously cheesy
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="rounded p-3 bg-light">
+                      <span class="checkmark">&#10003;</span> Boldly flavorful
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="rounded p-3 bg-light">
+                      <span class="checkmark">&#10003;</span> Loaded with toppings
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center bg-warning">
+              <h5 class="card-title">PASTILLAS</h5>
+              <h1 class="card-price">P79</h1>
+              <a class="btn btn-success btn-lg" href="#features">Order Now</a>
+            </div>
+            <div class="card-body bg-warning">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="rounded p-3 bg-warning">
+                      <span class="checkmark">&#10003;</span> Deliciously sweet and creamy
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="rounded p-3 bg-warning">
+                      <span class="checkmark">&#10003;</span> Delectable treat
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col">
+                    <div class="rounded p-3 bg-warning">
+                      <span class="checkmark">&#10003;</span> Melts in your mouth
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section id="features">
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <img src="./img/quality.png" alt="quality">
+            <h3>Premium Quality Ingredients.</h3>
+            <p class="feature-para">We meticulously source the finest, high-quality ingredients to craft our delectable snacks, ensuring an unparalleled taste experience with every bite.</p>
+          </div>
+          <div class="feature-box col-lg-4">
+            <img src="./img/intersection.png" alt="combo">
+            <h3>Value Combos.</h3>
+            <p class="feature-para">We offer value combos that provide a great assortment of snacks at a discounted price, allowing students to get more and enjoy a diverse range of flavors.</p>
+          </div>
+          <div class="feature-box col-lg-4">
+            <img src="./img/social-care.png" alt="care">
+            <h3>Handcrafted with Care.</h3>
+            <p class="feature-para">Our snacks are lovingly handcrafted by skilled artisans who pay attention to every detail, ensuring that each piece is a work of culinary art.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="contact">
+      <h3 class="contact-title">Leave us a Feedback</h3>
+      <p class="contact-para">If you have any query or feedback then leave us a message.</p>
+      <form>
+        <div class="form-content">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Leave Your Massage</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="leave message here" rows="3"></textarea>
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer bg-warning">
+      <div class="container text-left">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Information</h4>
+            <p>FEU TECH, P. Paredes St, Sampaloc, Manila, 1015 Metro Manila</p>
+            <p>Email: 202210024@fit.edu.ph</p>
+            <p>Phone: 0976-147-7781</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Quick Links:</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="custom-link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="custom-link">About Us</a>
+              </li>
+              <li>
+                <a href="#features" class="custom-link">Products</a>
+              </li>
+              <li>
+                <a href="#contact" class="custom-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Follow Us:</h4>
+            <div class="social-media">
+              <a class="footer-logo" href="#">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a class="footer-logo" href="#">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a class="footer-logo" href="#">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a class="footer-logo" href="#">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a class="footer-logo" href="#">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center py-3">
+          <a href="#" class="custom-link">Terms of Service</a> | <a class="custom-link" href="#">Privacy Policy</a>
+          <p>&copy; 2023 Handful of Euphoria. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
